@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resumo - Engenharia de Software</title>
+
+    <!-- Google Fonts - Sora -->
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="light-theme">
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm px-4 py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Engenharia de Software</a>
+
+            <button id="theme-toggle" class="btn btn-sm btn-outline-light me-2" title="Alternar tema">
+                <i class="bi bi-brightness-high-fill" id="theme-icon"></i>
+            </button>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#oque">O que é ES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#onde">Aplicações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#metodos">Metodologias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#principios">Princípios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#crise">Crise e Mitos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mt-5 pt-4"></div>
+
+    <!-- Carrossel -->
+    <section class="carousel-section my-5">
+        <div class="carousel-container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner rounded-4 shadow-sm">
+                    <div class="carousel-item active">
+                        <img src="./assets/image/slide_1.png" class="d-block carousel-img" alt="Software" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/image/slide_2.png" class="d-block carousel-img" alt="Programming" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/image/slide_3.png" class="d-block carousel-img" alt="Developer" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="avatar-desktop">
+                <img src="./assets/image/desenvolvimento-removebg-preview.png" alt="Avatar Desenvolvedor" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo -->
+    <main class="container my-5">
+        <section id="oque" class="mb-5">
+            <h3>O QUE É ENGENHARIA DE SOFTWARE (ES)?</h3>
+            <p>
+                A Engenharia de Software (ES) é uma disciplina que abrange <strong>um processo, um conjunto de métodos
+                    (práticas) e um leque de ferramentas</strong>.
+                O objetivo central da ES é possibilitar que os profissionais desenvolvam <strong>software de altíssima
+                    qualidade</strong>.
+            </p>
+            <p>
+                A ES é um dos mais importantes ramos da Computação e possui uma natureza <strong>dinâmica</strong>,
+                estando em constante mutação, refinando e agilizando seus processos.
+            </p>
+            <p>
+                A definição formal da <strong>IEEE Computer Society (2004)</strong> descreve Engenharia de Software como
+                a <strong>aplicação de uma abordagem sistemática, disciplinada e quantificável</strong> no
+                desenvolvimento, operação e manutenção de software — além do estudo dessas abordagens.
+            </p>
+            <p>
+                O principal objeto da Engenharia de Software é o <strong>software</strong>, que é o produto que os
+                profissionais desenvolvem e dão suporte a longo prazo. Ele consiste em instruções executáveis,
+                estruturas de dados para manipular informações e informações descritivas (documentação).
+            </p>
+        </section>
+
+        <section id="onde" class="mb-5">
+            <h3>ONDE É APLICADA?</h3>
+            <ul>
+                <li><strong>Estruturação de Processos:</strong> Estruturar a disciplina e padronizar as soluções
+                    propostas.</li>
+                <li><strong>Garantia de Qualidade:</strong> Garantir que o resultado da aplicação de métodos e
+                    procedimentos seja uma entrega de qualidade.</li>
+                <li><strong>Viabilidade Comercial:</strong> Assegurar que o produto esteja pronto para ser
+                    comercialmente viável.</li>
+                <li><strong>Atendimento à Demanda:</strong> Responder à crescente demanda por qualidade e agilidade na
+                    entrega de programas.</li>
+                <li><strong>Profissionalização:</strong> Transformar o desenvolvimento de software de uma atividade
+                    artesanal para uma atividade <strong>sistemática, organizada e baseada em métodos</strong>.</li>
+            </ul>
+        </section>
+
+        <section id="metodos" class="mb-5">
+            <h3>MÉTODOS E METODOLOGIAS</h3>
+            <p>
+                A ES utiliza métodos e metodologias para formatar a criação de artefatos de software de qualidade e
+                duradouros.
+            </p>
+
+            <h5>1. Metodologia Tradicional (Modelo Cascata)</h5>
+            <p>
+                O modelo em cascata, também conhecido como ciclo de vida clássico, define uma sequência estruturada de
+                fases:
+            </p>
+            <ul>
+                <li><strong>Requisitos:</strong> Descoberta, análise, especificação e validação das funções,
+                    características e restrições que o software deve apresentar.</li>
+                <li><strong>Projeto:</strong> Define <em>como</em> o sistema fará o que é necessário. Os requisitos são
+                    refinados e o produto é decomposto em <strong>módulos</strong>.</li>
+                <li><strong>Implementação:</strong> O projeto é transformado em linguagem de programação.</li>
+                <li><strong>Teste:</strong> Execução do programa para revelar defeitos e aumentar a confiança na
+                    solução.</li>
+                <li><strong>Manutenção:</strong> Correções e aprimoramentos após a entrega ao cliente.</li>
+            </ul>
+
+            <h5>2. Metodologias Ágeis</h5>
+            <p>
+                As metodologias mais atuais, como <strong>Extreme Programming (XP)</strong> e <strong>Scrum</strong>,
+                são adaptadas às demandas modernas, priorizando o cliente e respostas rápidas a mudanças. Elas reforçam
+                a comunicação, a entrega contínua e a flexibilidade.
+            </p>
+        </section>
+
+        <section id="principios" class="mb-5">
+            <h3>PRINCÍPIOS DA ENGENHARIA DE SOFTWARE</h3>
+            <ul>
+                <li><strong>Rigor e Método:</strong> Resolver problemas de forma estruturada e padronizada.</li>
+                <li><strong>Verificação e Validação:</strong> Garantir que todos os elementos do problema foram
+                    contemplados.</li>
+                <li><strong>Decomposição e Modularidade:</strong> Dividir problemas complexos em partes menores e
+                    gerenciáveis.</li>
+                <li><strong>Ocultamento de Informação:</strong> Cada módulo acessa apenas o que precisa para funcionar.
+                </li>
+                <li><strong>Coesão e Acoplamento:</strong> Manter itens logicamente relacionados e minimizar
+                    dependências.</li>
+                <li><strong>Integridade Conceitual:</strong> Preservar coerência e consistência na arquitetura do
+                    projeto.</li>
+                <li><strong>Abstração:</strong> Focar nos aspectos essenciais do problema e ignorar detalhes
+                    irrelevantes.</li>
+            </ul>
+        </section>
+
+        <section id="crise" class="mb-5">
+            <h3>CRISE DO SOFTWARE E MITOS</h3>
+            <p>
+                Na década de 1960, a Engenharia de Software enfrentou a chamada <strong>crise do software</strong>,
+                evidenciada por atrasos, falhas, sistemas difíceis de manter e incertezas nos prazos e custos.
+            </p>
+            <h5>Mitos sobre o Desenvolvimento de Software</h5>
+            <ul>
+                <li><strong>Mitos de Gerenciamento:</strong> A crença de que adicionar mais desenvolvedores resolverá
+                    atrasos, ou que um manual de práticas garante sucesso.</li>
+                <li><strong>Mitos dos Clientes:</strong> A ideia de que fornecer apenas uma definição geral do projeto é
+                    suficiente — quando na verdade, requisitos bem definidos são essenciais.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>Desenvolvido por Alfredo Allan © 2025</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
